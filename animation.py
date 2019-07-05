@@ -51,10 +51,10 @@ while True:
         while num2 >= points:
             num2 -= points
         pygame.draw.aaline(screen, line_color_rgb , (cir_x[num],cir_y[num]), (cir_x[num2],cir_y[num2]), 1)
-
     pygame.display.update()
+
     # Settings after drawing
     multi += skip
-    line_color_hsv[0] += 0.2
+    line_color_hsv[0] += 0.1
     if line_color_hsv[0] > 360:
         line_color_hsv[0]=0
